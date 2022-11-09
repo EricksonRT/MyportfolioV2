@@ -41,17 +41,28 @@
   color: #fff;
   transition: ease-out 1s;
 }
+.nav__menu-right {
+  display: flex;
+  z-index: 1;
+  justify-content: flex-end !important;
+  align-content: center;
+}
 .nav__check {
   width: 1em;
   visibility: hidden;
   border: solid 2px black;
 }
-.nav__check:checked ul {
+input[type=checkbox]:checked + .nav__ul {
   display: block;
+  background-color: rgba(0, 123, 238, 0.763);
 }
 @media (max-width: 615px) {
   .nav__check {
     visibility: visible;
+    position: absolute;
+  }
+  .nav__ul {
+    display: none;
   }
 }
 

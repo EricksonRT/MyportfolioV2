@@ -49,21 +49,29 @@ $colornegroTexto: rgb(0, 0, 0);
     color: #fff;
     transition: ease-out 1s;
   }
+  &__menu-right{
+    display: flex;
+    // position: relative;
+    z-index: 1;
+    justify-content: flex-end !important;
+    align-content: center;
+  }
   &__check {
     width: 1em;
     visibility: hidden;
     border: solid 2px black;
   }
-  &__check:checked {
-    ul {
-      @include mixinFuncions.menuResponsive;
-    }
+  input[type=checkbox]:checked + &__ul{
+  @include mixinFuncions.menuResponsive;
   }
-
   //   Media query del check
   @media (max-width: 615px) {
     &__check {
       visibility: visible;
+      position: absolute;
+    }
+    &__ul{
+      display:none;
     }
   }
 }

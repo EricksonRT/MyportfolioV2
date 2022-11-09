@@ -1,3 +1,7 @@
 @mixin menuResponsive {
   display: block;
+  background-color: rgba(0, 123, 238, 0.763);
+}
+@mixin menuResponsiveOff {
+  display: none;
 }

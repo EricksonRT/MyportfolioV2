@@ -7,7 +7,9 @@ export const Nabvar = () => {
                 <a href="#">
                 <img src={logo} alt="logo"/>
                  </a>
-            </div>
+        </div>
+          <label className="nav__label">Menu</label>
+          <input type="checkbox" className="nav__check" name="" id="checkMenu" />
         <ul className="nav__ul">
           <li className="nav__itemlist">
                     <a className="nav__itemref" href="#about">Sobre mi</a>
@@ -21,8 +23,7 @@ export const Nabvar = () => {
           </li>
           <li className="nav__itemlist">
             <a className="nav__itemref" href="#">Contacto</a>
-                </li>
-                <input type="checkbox" className="nav__check" name="" value="X" id=""/>
+            </li>
         </ul>
       </nav>
 

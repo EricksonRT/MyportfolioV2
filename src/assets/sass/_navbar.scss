@@ -3,9 +3,7 @@
 $colorPrimario: rgba(0, 153, 255, 0.85);
 $colorWhitetexto: rgb(220, 220, 220);
 $colornegroTexto: rgb(0, 0, 0);
-// .header {
-//   width: 100%;
-// }
+
 .nav {
   position: sticky;
   background: $colorPrimario;
@@ -49,29 +47,38 @@ $colornegroTexto: rgb(0, 0, 0);
     color: #fff;
     transition: ease-out 1s;
   }
-  &__menu-right{
+  &__menu-right {
     display: flex;
     // position: relative;
     z-index: 1;
     justify-content: flex-end !important;
     align-content: center;
   }
+
+  &__label,
   &__check {
+    text-decoration: none;
+    margin: auto;
+    padding-right: 5%;
+    float: right;
+    right: 0;
+    top: 0;
     width: 1em;
     visibility: hidden;
     border: solid 2px black;
   }
-  input[type=checkbox]:checked + &__ul{
-  @include mixinFuncions.menuResponsive;
+  input[type='checkbox']:checked + &__ul {
+    @include mixinFuncions.menuResponsive;
   }
   //   Media query del check
   @media (max-width: 615px) {
+    &__label,
     &__check {
       visibility: visible;
       position: absolute;
     }
-    &__ul{
-      display:none;
+    &__ul {
+      display: none;
     }
   }
 }

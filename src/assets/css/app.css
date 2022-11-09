@@ -47,17 +47,24 @@
   justify-content: flex-end !important;
   align-content: center;
 }
-.nav__check {
+.nav__label, .nav__check {
+  text-decoration: none;
+  margin: auto;
+  padding-right: 5%;
+  float: right;
+  right: 0;
+  top: 0;
   width: 1em;
   visibility: hidden;
   border: solid 2px black;
 }
 input[type=checkbox]:checked + .nav__ul {
-  display: block;
-  background-color: rgba(0, 123, 238, 0.763);
+  display: grid;
+  background-color: rgba(0, 153, 255, 0.85);
+  justify-content: center;
 }
 @media (max-width: 615px) {
-  .nav__check {
+  .nav__label, .nav__check {
     visibility: visible;
     position: absolute;
   }

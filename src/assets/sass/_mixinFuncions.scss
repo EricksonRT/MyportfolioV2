@@ -1,7 +1,15 @@
+$colorPrimario: rgba(0, 153, 255, 0.85);
 @mixin menuResponsive {
-  display: block;
-  background-color: rgba(0, 123, 238, 0.763);
+  display: grid;
+  background-color: $colorPrimario;
+  justify-content: center;
 }
 @mixin menuResponsiveOff {
   display: none;
+}
+@mixin returnNavbarNormal() {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  background-color: blue;
 }

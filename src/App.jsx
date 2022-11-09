@@ -1,10 +1,11 @@
+import './assets/css/app.css'
+import { Nabvar } from './components/Navbar/Navbar'
 
 function App() {
 
-  return (
-    <div >
-     <h1>Hola mundo</h1>
-    </div>
+  return (<>
+    <Nabvar />
+  </>
   )
 }
 

@@ -80,7 +80,9 @@ input[type=checkbox]:checked + .nav__ul {
   display: grid;
   background-color: rgba(0, 153, 255, 0.85);
   justify-content: center;
-  transition-duration: 3.2s;
+  height: 80vh;
+  animation-duration: 1s;
+  animation-name: toggleMenu;
 }
 @media (max-width: 615px) {
   .nav__label, .nav__img, .nav__check {
@@ -92,6 +94,14 @@ input[type=checkbox]:checked + .nav__ul {
   }
 }
 
+@keyframes toggleMenu {
+  from {
+    height: 30vh;
+  }
+  to {
+    height: 80vh;
+  }
+}
 * {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }

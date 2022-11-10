@@ -5,7 +5,7 @@ export const Nabvar = () => {
   useEffect(() => {
     const checkUpdate = () => {
       let checkMenu = document.querySelector("#checkMenu");
-      if (screen.width < 616) checkMenu.checked=false
+      if (screen.width < 670) checkMenu.checked=false
     }
     window.addEventListener("resize", (checkUpdate))
     return (() => {

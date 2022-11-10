@@ -3,7 +3,8 @@ $colorPrimario: rgba(0, 153, 255, 0.85);
   display: grid;
   background-color: $colorPrimario;
   justify-content: center;
-  height: 80vh;
+  height: 60vh;
+  text-align: center;
 }
 @mixin menuResponsiveOff {
   display: none;

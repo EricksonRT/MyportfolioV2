@@ -3,8 +3,15 @@
 $colorPrimario: rgba(0, 153, 255, 0.85);
 $colorWhitetexto: rgb(220, 220, 220);
 $colornegroTexto: rgb(0, 0, 0);
+// color de la barra en el hover
+$itemColorHover: #ffff;
+body {
+  width: 100%;
+  margin: 0 auto;
+}
 
 .nav {
+  top: -1%;
   position: sticky;
   background: $colorPrimario;
   height: 4.5rem;
@@ -32,20 +39,22 @@ $colornegroTexto: rgb(0, 0, 0);
     padding: 0;
     margin: 0;
     top: 0;
+    padding-right: 20px;
   }
   &__itemlist {
     margin-top: 1.1rem;
     list-style: none;
     font-size: 1.6em;
-    margin-left: 1.5%;
+    margin-left: 1em;
   }
   &__itemref {
     text-decoration: none;
     color: $colorWhitetexto;
   }
   &__itemref:hover {
-    color: #fff;
-    transition: ease-out 1s;
+    color: rgb(255, 255, 255);
+    transition: ease-out 0.5s;
+    animation: slide_item 0.6s alternate-reverse infinite;
   }
   &__menu-right {
     display: flex;
@@ -55,7 +64,8 @@ $colornegroTexto: rgb(0, 0, 0);
     align-content: center;
   }
 
-  &__label, &__img {
+  &__label,
+  &__img {
     text-decoration: none;
     margin-top: 1.3rem;
     padding-right: 10px;
@@ -63,7 +73,8 @@ $colornegroTexto: rgb(0, 0, 0);
     right: 0;
     top: 0;
     width: 2em;
-    visibility: hidden;
+    // cambié visibility:hidden por display none
+    display: none;
     cursor: pointer;
   }
   &__check {
@@ -76,24 +87,27 @@ $colornegroTexto: rgb(0, 0, 0);
     top: 0;
     width: 35px;
     height: 1.8em;
-    visibility: hidden;
+    // cambié visibility:hidden por display none
+    display: none;
     cursor: pointer;
     appearance: none;
     border-radius: 5px;
   }
-  &__check:active{  
+  &__check:active {
     box-shadow: 1px 1px 6px 0.5px;
   }
   input[type='checkbox']:checked + &__ul {
     @include mixinFuncions.menuResponsive;
-    animation-duration: 1s ;
-  animation-name: toggleMenu;
+    animation-duration: 1s;
+    animation-name: toggleMenu;
   }
   //   Media query del check
-  @media (max-width: 615px) {
-    &__label, &__img,
+  @media (max-width: 670px) {
+    &__label,
+    &__img,
     &__check {
-      visibility: visible;
+      // cambié visibility:visible por display initial
+      display: initial;
       position: absolute;
     }
     &__ul {
@@ -101,12 +115,27 @@ $colornegroTexto: rgb(0, 0, 0);
     }
   }
 }
+// ANIMACIÓN DEL MENÚ MOBILE
 @keyframes toggleMenu {
   from {
-    height: 30vh;
+    height: 10vh;
   }
 
   to {
-    height: 80vh;
+    height: 60vh;
+  }
+}
+// ANIMACIÓN DEL HOVER EN NAVBAR
+@keyframes slide_item {
+  0% {
+    text-decoration-color: $itemColorHover;
+    // text-emphasis-style: open;
+    text-emphasis-position: under;
+  }
+  100% {
+    text-decoration: underline 10px;
+    // text-emphasis-style: open;
+    // text-emphasis-position: under;
+    text-decoration-color: $itemColorHover;
   }
 }

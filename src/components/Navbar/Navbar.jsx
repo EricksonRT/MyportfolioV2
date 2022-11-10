@@ -1,11 +1,12 @@
 import { useEffect } from "react"
-import logo from "../../assets/img/icons/logoReact.png"
+import logo from "../../assets/img/icons/Logo_portfolio.png"
 import logoToggle from "../../assets/img/icons/menu_gugel.svg";;
 export const Nabvar = () => {
   useEffect(() => {
     const checkUpdate = () => {
       let checkMenu = document.querySelector("#checkMenu");
-      if (screen.width < 670) checkMenu.checked=false
+      // if (screen.width < 670) checkMenu.checked=false
+      checkMenu.checked = screen.width < 670 ? true : false;
     }
     window.addEventListener("resize", (checkUpdate))
     return (() => {

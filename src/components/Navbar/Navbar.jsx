@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import logo from "../../assets/img/icons/logoReact.png"
+import logoToggle from "../../assets/img/icons/menu_gugel.svg";;
 export const Nabvar = () => {
   useEffect(() => {
     const checkUpdate = () => {
@@ -19,7 +20,7 @@ export const Nabvar = () => {
                 <img src={logo} alt="logo"/>
                  </a>
         </div>
-          <label className="nav__label">Menu</label>
+        <img className="nav__img" src={logoToggle} alt="" />
           <input type="checkbox" className="nav__check" name="checkMenu" id="checkMenu" />
         <ul className="nav__ul">
           <li className="nav__itemlist">

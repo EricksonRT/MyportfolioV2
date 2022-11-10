@@ -55,24 +55,41 @@ $colornegroTexto: rgb(0, 0, 0);
     align-content: center;
   }
 
-  &__label,
-  &__check {
+  &__label, &__img {
     text-decoration: none;
-    margin: auto;
-    padding-right: 5%;
+    margin-top: 1.3rem;
+    padding-right: 10px;
     float: right;
     right: 0;
     top: 0;
-    width: 1em;
+    width: 2em;
     visibility: hidden;
-    border: solid 2px black;
+    cursor: pointer;
+  }
+  &__check {
+    text-decoration: none;
+    margin-top: 1.6rem;
+    margin-right: 1.3%;
+    padding-right: 10px;
+    float: right;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 1.8em;
+    visibility: hidden;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 5px;
+  }
+  &__check:active{
+    box-shadow: 1px 1px 6px 0.5px;
   }
   input[type='checkbox']:checked + &__ul {
     @include mixinFuncions.menuResponsive;
   }
   //   Media query del check
   @media (max-width: 615px) {
-    &__label,
+    &__label, &__img,
     &__check {
       visibility: visible;
       position: absolute;

@@ -121,6 +121,14 @@ input[type=checkbox]:checked + .nav__ul {
     text-decoration-color: white;
   }
 }
+@keyframes slideLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 * {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }

@@ -1,44 +1,58 @@
-import { useEffect } from "react"
-import logo from "../../assets/img/icons/Logo_portfolio.png"
-import logoToggle from "../../assets/img/icons/menu_gugel.svg";;
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/img/icons/Logo_portfolio.png';
+import logoToggle from '../../assets/img/icons/menu_gugel.svg';
 export const Nabvar = () => {
   useEffect(() => {
     const checkUpdate = () => {
-      let checkMenu = document.querySelector("#checkMenu");
+      let checkMenu = document.querySelector('#checkMenu');
       // if (screen.width < 670) checkMenu.checked=false
       checkMenu.checked = screen.width < 670 ? true : false;
-    }
-    window.addEventListener("resize", (checkUpdate))
-    return (() => {
-      window.removeEventListener("resize", checkUpdate)
-    })
-
-  }, [])
-    return <>
-        <nav className="nav">
+    };
+    window.addEventListener('resize', checkUpdate);
+    return () => {
+      window.removeEventListener('resize', checkUpdate);
+    };
+  }, []);
+  return (
+    <>
+      <nav className="nav">
         <div className="nav__logo">
-                <a href="#">
-                <img src={logo} alt="logo"/>
-                 </a>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
-        <img className="nav__img" src={logoToggle} alt="" />
-          <input type="checkbox" className="nav__check" name="checkMenu" id="checkMenu" />
+        <img className="nav__img" src={logoToggle} alt="checkMenu" />
+        <input
+          type="checkbox"
+          className="nav__check"
+          name="checkMenu"
+          id="checkMenu"
+        />
         <ul className="nav__ul">
           <li className="nav__itemlist">
-                    <a className="nav__itemref" href="#about">Sobre mi</a>
-                    <div className="nav--line"></div>
+            <Link className="nav__itemref" to="/about/">
+              Sobre mi
+            </Link>
+            <div className="nav--line"></div>
           </li>
           <li className="nav__itemlist">
-            <a className="nav__itemref" href="#">Proyectos</a>
+            <Link className="nav__itemref" to="/projects/">
+              Proyectos
+            </Link>
           </li>
           <li className="nav__itemlist">
-            <a className="nav__itemref" href="#">Trabajos</a>
+            <Link className="nav__itemref" to="/jobs/">
+              Trabajos
+            </Link>
           </li>
           <li className="nav__itemlist">
-            <a className="nav__itemref" href="#">Contacto</a>
-            </li>
+            <Link className="nav__itemref" to="/contact/">
+              Contacto
+            </Link>
+          </li>
         </ul>
       </nav>
-
     </>
-}
+  );
+};

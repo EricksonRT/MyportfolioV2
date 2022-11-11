@@ -139,3 +139,11 @@ body {
     text-decoration-color: $itemColorHover;
   }
 }
+@keyframes slideLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

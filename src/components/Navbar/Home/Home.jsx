@@ -1,8 +1,18 @@
-import logo from '../../../assets/img/icons/Copywriter.svg';
+import logo from "../../../assets/img/icons/Copywriter.svg";
 const Home = () => {
   return (
     <>
-      <img src={logo} alt="" srcset="" />
+      <div className="container">
+        <div className="flex mt-10">
+          <img className="img-thumbail" src={logo} alt="logo" />
+          <div className="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            ipsam alias ex eveniet laudantium mollitia eaque id? Aperiam, minus.
+            Itaque fugit obcaecati dolorum quo, alias accusamus fuga! Quo, cum
+            aspernatur?
+          </div>
+        </div>
+      </div>
     </>
   );
 };

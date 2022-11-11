@@ -1,0 +1,34 @@
+.footer {
+  width: 100vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  &__body {
+    position: absolute;
+    // margin-top: -5%;
+    bottom: 0;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(0, 153, 255, 0.385);
+  }
+}
+.custom-shape-divider-bottom-1668180242 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668180242 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 180px;
+}
+
+.custom-shape-divider-bottom-1668180242 .shape-fill {
+  fill: #0099ffd9;
+}

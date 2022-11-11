@@ -6,7 +6,7 @@ body {
 .nav {
   top: -1%;
   position: sticky;
-  background: rgba(0, 153, 255, 0.85);
+  background: rgba(0, 153, 255, 0.851);
   height: 4.5rem;
   box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.275);
 }
@@ -156,6 +156,41 @@ input[type=checkbox]:checked + .nav__ul {
     justify-content: center;
   }
 }
+.footer {
+  width: 100vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer__body {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgba(0, 153, 255, 0.385);
+}
+
+.custom-shape-divider-bottom-1668180242 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668180242 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 180px;
+}
+
+.custom-shape-divider-bottom-1668180242 .shape-fill {
+  fill: rgba(0, 153, 255, 0.8509803922);
+}
+
 * {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }

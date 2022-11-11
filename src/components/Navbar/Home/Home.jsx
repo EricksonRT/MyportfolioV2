@@ -1,11 +1,11 @@
-import logo from "../../../assets/img/icons/Copywriter.svg";
+import logo from '../../../assets/img/icons/Copywriter.svg';
 const Home = () => {
   return (
     <>
       <div className="container">
         <div className="flex mt-10">
           <img className="img-thumbail" src={logo} alt="logo" />
-          <div className="">
+          <div className="mt-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
             ipsam alias ex eveniet laudantium mollitia eaque id? Aperiam, minus.
             Itaque fugit obcaecati dolorum quo, alias accusamus fuga! Quo, cum

@@ -3,14 +3,23 @@ const Home = () => {
   return (
     <>
       <div className="container header">
-        <h1>Un poco de mí...</h1>
-        <div className="flex mt-10">
+        <h1>Técnico Programador | Desarollador de Software</h1>
+        <div className="flex mt-2">
           <img className="img-thumbail" src={logo} alt="logo" />
           <div className="mt-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            ipsam alias ex eveniet laudantium mollitia eaque id? Aperiam, minus.
-            Itaque fugit obcaecati dolorum quo, alias accusamus fuga! Quo, cum
-            aspernatur?
+            <h4>
+              Esta es la segunda versión de mi portafolio, dentro de él, podrás
+              ver las distintas secciones que contienen:
+            </h4>
+            <ul className="flex__ul">
+              <li>Información general sobre mí.</li>
+              <li>Mis proyectos, junto con las técnologias utilizadas.</li>
+              <li>Trabajos/páginas que desarollé.</li>
+              <li>
+                Un formulario de contacto por si te interesa enviarme un correo
+                o consulta.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

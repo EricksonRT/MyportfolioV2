@@ -4,6 +4,10 @@
 }
 .flex{
     display: flex;
+    &__ul{
+        text-align:start;
+        font-size: 1.2em;
+    }
 }
 .img-thumbail{
     width: 50%;

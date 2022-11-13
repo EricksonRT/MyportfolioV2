@@ -76,7 +76,7 @@ p {
 
 .content {
   position: relative;
-  height: 20vh;
+  height: 15vh;
   text-align: center;
   background-color: white;
 }
@@ -110,21 +110,8 @@ p {
     transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-  h1 {
-    font-size: 24px;
-  }
-}
 
-
+// iconos del footer
 .flex-icons {
   display: flex;
   justify-content: center;
@@ -137,11 +124,32 @@ p {
     justify-content: center;
   }
   &__icon-social-end{
-    width: 3em;
-    height: 2rem;
+    width: 3.5em;
+    height: 2.5rem;
   }
   &__icon-social{
     width: 1.5em;
     height: 1.5em;
   }
 }
+
+
+// Animacion para mobile
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 15vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .flex-icons{
+    padding-top: 10%;
+  }
+}
+
+

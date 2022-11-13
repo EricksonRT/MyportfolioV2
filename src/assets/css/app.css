@@ -5,6 +5,7 @@ body {
 }
 
 .nav {
+  z-index: 1;
   top: -1%;
   position: sticky;
   background: rgba(0, 153, 255, 0.851);
@@ -24,6 +25,7 @@ body {
   align-items: flex-start;
 }
 .nav__logo img {
+  position: relative;
   width: 60px;
 }
 .nav__ul {
@@ -138,6 +140,10 @@ input[type=checkbox]:checked + .nav__ul {
 .flex {
   display: flex;
 }
+.flex__ul {
+  text-align: start;
+  font-size: 1.2em;
+}
 
 .img-thumbail {
   width: 50%;
@@ -214,7 +220,7 @@ p {
 
 .content {
   position: relative;
-  height: 20vh;
+  height: 15vh;
   text-align: center;
   background-color: white;
 }
@@ -252,19 +258,6 @@ p {
     transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-  h1 {
-    font-size: 24px;
-  }
-}
 .flex-icons {
   display: flex;
   justify-content: center;
@@ -277,14 +270,30 @@ p {
   justify-content: center;
 }
 .flex-icons__icon-social-end {
-  width: 3em;
-  height: 2rem;
+  width: 3.5em;
+  height: 2.5rem;
 }
 .flex-icons__icon-social {
   width: 1.5em;
   height: 1.5em;
 }
 
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 15vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .flex-icons {
+    padding-top: 10%;
+  }
+}
 * {
   font-family: "Lato", sans-serif;
 }

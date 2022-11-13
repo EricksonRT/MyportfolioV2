@@ -4,20 +4,13 @@ import logolinkedin from "../../assets/img/icons/social/linkedin.svg";
 import logoEmail from "../../assets/img/icons/social/mail.svg";
 import logoPhone from "../../assets/img/icons/social/smartphone.svg";
 export const Footer = () => {
+  const fecha = new Date();
   return (
     <>
       <div className="header">
-        {/* <div className="inner-header flex">
-          <h1>Simple CSS Waves</h1>
-        </div> */}
         <Wave />
       </div>
-      <div className="content flex">
-        <p>
-          <b>Mi portafolio</b>|
-        </p>
-        <p>realizado por Erick Irusta</p>
-      </div>
+      {/* content flex */}
       <div className="flex-icons">
         <div className="flex-icons_end">
           <img
@@ -47,6 +40,12 @@ export const Footer = () => {
           />
           <p>+54 1122517800</p>
         </div>
+      </div>
+      <div className="content flex">
+        <p>
+          <b>Mi portafolio</b>|
+        </p>
+        <p> &#169; 2022 - {fecha.getFullYear()} realizado por Erick Irusta</p>
       </div>
     </>
   );

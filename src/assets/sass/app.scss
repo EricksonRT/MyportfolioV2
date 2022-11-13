@@ -7,6 +7,25 @@
   // font-family: Verdana, Arial, Helvetica, sans-serif;
   font-family: 'Lato', sans-serif;
 }
-body{
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+
+body {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  background-repeat: no-repeat;
+  // Ancho del scrollbar
+  &::-webkit-scrollbar {
+    width: 5px;
+    color: rgb(0, 100, 193);
+  }
+  // color de bg del scrollbar
+  &::-webkit-scrollbar-track {
+    background: rgba(70, 131, 180, 0.446);
+  }
+  //propiedades del thumb (linea del scrollbar)
+  &::-webkit-scrollbar-thumb {
+    background: rgba(20, 149, 255, 0.549);
+  }
 }

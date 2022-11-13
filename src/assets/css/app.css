@@ -195,7 +195,8 @@ p {
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
+.flex {
+  /*Flexbox for containers*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +271,17 @@ p {
 
 body {
   background: linear-gradient(60deg, rgb(84, 58, 183) 0%, rgb(0, 172, 193) 100%);
+  background-repeat: no-repeat;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  color: rgb(0, 100, 193);
+}
+body::-webkit-scrollbar-track {
+  background: rgba(70, 131, 180, 0.446);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(20, 149, 255, 0.549);
 }
 
 /*# sourceMappingURL=app.css.map */

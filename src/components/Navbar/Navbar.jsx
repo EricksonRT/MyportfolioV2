@@ -32,23 +32,23 @@ export const Nabvar = () => {
         <ul className="nav__ul">
           <li className="nav__itemlist">
             <Link className="nav__itemref" to="/about/">
-              Sobre mi
+              <b>Sobre mi</b>
             </Link>
             <div className="nav--line"></div>
           </li>
           <li className="nav__itemlist">
             <Link className="nav__itemref" to="/projects/">
-              Proyectos
+              <b>Proyectos</b>
             </Link>
           </li>
           <li className="nav__itemlist">
             <Link className="nav__itemref" to="/jobs/">
-              Trabajos
+              <b>Trabajos</b>
             </Link>
           </li>
           <li className="nav__itemlist">
             <Link className="nav__itemref" to="/contact/">
-              Contacto
+              <b>Contacto</b>
             </Link>
           </li>
         </ul>

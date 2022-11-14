@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './assets/css/app.css';
+import About from './components/About/About';
 import { Footer } from './components/Footer/Footer';
-import About from './components/Navbar/About/About';
-import Home from './components/Navbar/Home/Home';
+import Home from './components/Home/Home';
+
 import { Nabvar } from './components/Navbar/Navbar';
 
 function App() {

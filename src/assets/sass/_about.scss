@@ -1,0 +1,17 @@
+.card-img {
+  width: 20rem;
+  height: 20rem;
+
+  //   border: solid 10px;
+  //   position: absolute;
+  img {
+    width: 350px;
+    border-radius: 50% 50%;
+    height: 350px;
+    object-fit: scale-down;
+    // position: relative;
+    background-position: center center;
+    z-index: -9;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 207, 220));
+  }
+}

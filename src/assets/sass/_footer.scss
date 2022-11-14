@@ -1,6 +1,3 @@
-//Variables
-$colorWhitetexto: rgb(220, 220, 220);
-
 .footer {
   width: 100vh;
   position: relative;
@@ -45,7 +42,7 @@ h1 {
   font-size: 48px;
 }
 p {
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   font-size: 14px;
   color: #333333;
 }
@@ -119,20 +116,19 @@ p {
   flex-direction: column;
   text-align: center;
   background-color: #fff;
-  &_end{
+  &_end {
     display: flex;
     justify-content: center;
   }
-  &__icon-social-end{
+  &__icon-social-end {
     width: 3.5em;
     height: 2.5rem;
   }
-  &__icon-social{
+  &__icon-social {
     width: 1.5em;
     height: 1.5em;
   }
 }
-
 
 // Animacion para mobile
 /*Shrinking for mobile*/
@@ -147,9 +143,7 @@ p {
   h1 {
     font-size: 24px;
   }
-  .flex-icons{
+  .flex-icons {
     padding-top: 10%;
   }
 }
-
-

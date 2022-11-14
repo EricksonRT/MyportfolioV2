@@ -1,8 +1,8 @@
-import logo from "../../../assets/img/icons/Copywriter.svg";
+import logo from '../../assets/img/icons/Copywriter.svg';
 const Home = () => {
   return (
     <>
-      <div className="container header">
+      <div className="container header slide-in-left">
         <h1>Técnico Programador | Desarollador de Software</h1>
         <div className="flex mt-2">
           <img className="img-thumbail" src={logo} alt="logo" />

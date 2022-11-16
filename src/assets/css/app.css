@@ -50,7 +50,6 @@ body {
 .nav__itemref:hover {
   color: rgb(255, 255, 255);
   transition: ease-out 0.5s;
-  animation: slide_item 0.6s alternate-reverse infinite;
 }
 .nav__menu-right {
   display: flex;
@@ -106,6 +105,11 @@ input[type=checkbox]:checked + .nav__ul {
   }
 }
 
+.active {
+  animation: slide_item 0.6s alternate-reverse infinite;
+  color: white;
+}
+
 @keyframes toggleMenu {
   from {
     height: 10vh;
@@ -120,7 +124,7 @@ input[type=checkbox]:checked + .nav__ul {
     text-emphasis-position: under;
   }
   100% {
-    text-decoration: underline 10px;
+    text-decoration: underline 7px;
     text-decoration-color: white;
   }
 }

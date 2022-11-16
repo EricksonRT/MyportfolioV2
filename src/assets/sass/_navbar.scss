@@ -56,7 +56,6 @@ body {
   &__itemref:hover {
     color: rgb(255, 255, 255);
     transition: ease-out 0.5s;
-    animation: slide_item 0.6s alternate-reverse infinite;
   }
   &__menu-right {
     display: flex;
@@ -117,6 +116,11 @@ body {
     }
   }
 }
+.active {
+  animation: slide_item 0.6s alternate-reverse infinite;
+  color: #ffff;
+}
+
 // ANIMACIÓN DEL MENÚ MOBILE
 @keyframes toggleMenu {
   from {
@@ -135,7 +139,7 @@ body {
     text-emphasis-position: under;
   }
   100% {
-    text-decoration: underline 10px;
+    text-decoration: underline 7px;
     // text-emphasis-style: open;
     // text-emphasis-position: under;
     text-decoration-color: $itemColorHover;

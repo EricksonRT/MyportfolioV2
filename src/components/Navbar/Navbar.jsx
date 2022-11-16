@@ -31,7 +31,7 @@ export const Nabvar = () => {
         />
         <ul className="nav__ul">
           <li className="nav__itemlist">
-            <Link className="nav__itemref" to="/about/">
+            <Link className="nav__itemref active" to="/about/">
               <b>Sobre mi</b>
             </Link>
             <div className="nav--line"></div>

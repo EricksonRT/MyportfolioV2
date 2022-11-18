@@ -1,10 +1,12 @@
-import Wave from "../../assets/img/icons/Wave/Wave";
-import logoGithub from "../../assets/img/icons/social/github.svg";
-import logolinkedin from "../../assets/img/icons/social/linkedin.svg";
-import logoEmail from "../../assets/img/icons/social/mail.svg";
-import logoPhone from "../../assets/img/icons/social/smartphone.svg";
+import Wave from '../../assets/img/icons/Wave/Wave';
+import logoGithub from '../../assets/img/icons/social/github.svg';
+import logolinkedin from '../../assets/img/icons/social/linkedin.svg';
+import logoEmail from '../../assets/img/icons/social/mail.svg';
+import logoPhone from '../../assets/img/icons/social/smartphone.svg';
 export const Footer = () => {
   const fecha = new Date();
+  const linkLinkedin = 'https://www.linkedin.com/in/eric-irusta/';
+  const linkGithub = 'https://github.com/EricksonRT';
   return (
     <>
       <div className="header">
@@ -13,16 +15,20 @@ export const Footer = () => {
       {/* content flex */}
       <div className="flex-icons">
         <div className="flex-icons_end">
-          <img
-            className="flex-icons__icon-social-end"
-            src={logoGithub}
-            alt="icon-github"
-          />
-          <img
-            className="flex-icons__icon-social-end"
-            src={logolinkedin}
-            alt="icon-linkedin"
-          />
+          <a className="link-to" href={linkGithub} target="blank">
+            <img
+              className="flex-icons__icon-social-end"
+              src={logoGithub}
+              alt="icon-github"
+            />
+          </a>
+          <a className="link-to" href={linkLinkedin} target="blank">
+            <img
+              className="flex-icons__icon-social-end"
+              src={logolinkedin}
+              alt="icon-linkedin"
+            />
+          </a>
         </div>
         <div className="flex">
           <img

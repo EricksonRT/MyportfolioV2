@@ -38,6 +38,15 @@ $colorWhitetexto: rgb(220, 220, 220);
     flex-wrap: wrap;
     justify-content: center;
   }
+  .card-img {
+    img {
+      height: 323px !important;
+    }
+  }
 }
 
-// css about
+// css footer links icons
+.link-to {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 105, 175, 0.659));
+  // transition: ease-in-out;
+}

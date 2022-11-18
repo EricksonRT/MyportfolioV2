@@ -179,7 +179,14 @@ input[type=checkbox]:checked + .nav__ul {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .card-img img {
+    height: 323px !important;
+  }
 }
+.link-to {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 105, 175, 0.659));
+}
+
 .footer {
   width: 100vh;
   position: relative;

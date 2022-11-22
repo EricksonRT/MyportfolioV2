@@ -10,5 +10,5 @@ buttons.forEach((btn) => {
 });
 
 const resetLink = () => {
-  buttons.forEach((btn) => btn.classList.remove('active'));
+  buttons.forEach((bt) => bt.classList.remove('active'));
 };

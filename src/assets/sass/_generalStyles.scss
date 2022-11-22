@@ -38,8 +38,14 @@ $colorWhitetexto: rgb(220, 220, 220);
     flex-wrap: wrap;
     justify-content: center;
   }
+  .card-img {
+    img {
+      height: 323px !important;
+    }
+  }
 }
 
+<<<<<<< HEAD
 // css about
 
 @media (max-width: 670px) {
@@ -48,4 +54,10 @@ $colorWhitetexto: rgb(220, 220, 220);
     height: 312px !important;
    }
  }
+=======
+// css footer links icons
+.link-to {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 105, 175, 0.659));
+  // transition: ease-in-out;
+>>>>>>> 07802da553862917186e1d2ac815dbe81c92a9fd
 }

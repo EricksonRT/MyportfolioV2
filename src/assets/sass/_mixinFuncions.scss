@@ -20,3 +20,32 @@ $colorPrimario: rgba(0, 153, 255, 0.85);
 //   justify-content: center;
 //   flex-direction: row;
 // }
+
+// Animación del circulo del loading
+@mixin Circulo{
+  @for $i from 1 through 5 {
+    .cir-#{$i}{
+      animation: circle-animated-#{$i} 1.5s alternate-reverse infinite;
+        @keyframes circle-animated-#{$i} {
+          0%{
+            transform: rotateX(45px/$i);
+          }
+          50%{
+              transform: translateY(-40px/$i);
+          }
+          90%{
+              transform: translateY(-24px/$i);
+          }
+          100%{
+            transform: translateY(-45px/$i);
+          }
+        }
+        @if $i==1 {
+          transform: translateY(-45px/$i);
+        }
+        @if $i==5 {
+          transform: translateY(85px/$i);
+        }
+    }
+  }
+}

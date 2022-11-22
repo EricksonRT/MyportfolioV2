@@ -41,3 +41,11 @@ $colorWhitetexto: rgb(220, 220, 220);
 }
 
 // css about
+
+@media (max-width: 670px) {
+ .card-img {
+  img{
+    height: 312px !important;
+   }
+ }
+}

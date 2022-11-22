@@ -180,6 +180,11 @@ input[type=checkbox]:checked + .nav__ul {
     justify-content: center;
   }
 }
+@media (max-width: 670px) {
+  .card-img img {
+    height: 312px !important;
+  }
+}
 .footer {
   width: 100vh;
   position: relative;
@@ -340,6 +345,106 @@ p {
     opacity: 1;
   }
 }
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 153, 255, 0.851);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.cir-1 {
+  animation: circle-animated-1 1.5s alternate-reverse infinite;
+  transform: translateY(-45px);
+}
+@keyframes circle-animated-1 {
+  0% {
+    transform: rotateX(45px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  90% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(-45px);
+  }
+}
+
+.cir-2 {
+  animation: circle-animated-2 1.5s alternate-reverse infinite;
+}
+@keyframes circle-animated-2 {
+  0% {
+    transform: rotateX(22.5px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  90% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(-22.5px);
+  }
+}
+
+.cir-3 {
+  animation: circle-animated-3 1.5s alternate-reverse infinite;
+}
+@keyframes circle-animated-3 {
+  0% {
+    transform: rotateX(15px);
+  }
+  50% {
+    transform: translateY(-13.3333333333px);
+  }
+  90% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.cir-4 {
+  animation: circle-animated-4 1.5s alternate-reverse infinite;
+}
+@keyframes circle-animated-4 {
+  0% {
+    transform: rotateX(11.25px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(-11.25px);
+  }
+}
+
+.cir-5 {
+  animation: circle-animated-5 1.5s alternate-reverse infinite;
+  transform: translateY(17px);
+}
+@keyframes circle-animated-5 {
+  0% {
+    transform: rotateX(9px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  90% {
+    transform: translateY(-4.8px);
+  }
+  100% {
+    transform: translateY(-9px);
+  }
+}
+
 * {
   font-family: "Lato", sans-serif;
 }

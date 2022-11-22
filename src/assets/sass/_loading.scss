@@ -1,0 +1,11 @@
+@use "mixinFuncions";
+// Variables
+$colorPrimario: rgba(0, 153, 255, 0.851);
+.circle{
+    width: 35px;
+    height: 35px;
+    background-color: $colorPrimario;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+@include mixinFuncions.Circulo();

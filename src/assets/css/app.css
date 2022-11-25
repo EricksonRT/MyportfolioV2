@@ -183,18 +183,11 @@ input[type=checkbox]:checked + .nav__ul {
     height: 323px !important;
   }
 }
-<<<<<<< HEAD
 @media (max-width: 670px) {
   .card-img img {
     height: 312px !important;
   }
 }
-=======
-.link-to {
-  filter: drop-shadow(0 0 0.75rem rgba(0, 105, 175, 0.659));
-}
-
->>>>>>> 07802da553862917186e1d2ac815dbe81c92a9fd
 .footer {
   width: 100vh;
   position: relative;
@@ -364,94 +357,54 @@ p {
 }
 
 .cir-1 {
-  animation: circle-animated-1 1.5s alternate-reverse infinite;
-  transform: translateY(-45px);
+  animation: circle-animated-1 1s alternate-reverse infinite;
+  transform: translateY(-33px);
+  transform: translateX(35px);
 }
 @keyframes circle-animated-1 {
-  0% {
-    transform: rotateX(45px);
-  }
-  50% {
-    transform: translateY(-40px);
-  }
-  90% {
-    transform: translateY(-24px);
-  }
   100% {
-    transform: translateY(-45px);
+    transform: translateY(-1px);
   }
 }
 
 .cir-2 {
-  animation: circle-animated-2 1.5s alternate-reverse infinite;
+  animation: circle-animated-2 1s alternate-reverse infinite;
+  transform: translateY(50px);
 }
 @keyframes circle-animated-2 {
-  0% {
-    transform: rotateX(22.5px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  90% {
-    transform: translateY(-12px);
-  }
   100% {
-    transform: translateY(-22.5px);
+    transform: translateY(-0.5px);
   }
 }
 
 .cir-3 {
-  animation: circle-animated-3 1.5s alternate-reverse infinite;
+  animation: circle-animated-3 1s alternate-reverse infinite;
+  transform: translateY(-43.3333333333px);
 }
 @keyframes circle-animated-3 {
-  0% {
-    transform: rotateX(15px);
-  }
-  50% {
-    transform: translateY(-13.3333333333px);
-  }
-  90% {
-    transform: translateY(-8px);
-  }
   100% {
-    transform: translateY(-15px);
+    transform: translateY(-0.3333333333px);
   }
 }
 
 .cir-4 {
-  animation: circle-animated-4 1.5s alternate-reverse infinite;
+  animation: circle-animated-4 1s alternate-reverse infinite;
+  transform: translateY(11.75px);
+  transform: translateX(-28.75px);
 }
 @keyframes circle-animated-4 {
-  0% {
-    transform: rotateX(11.25px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  90% {
-    transform: translateY(-6px);
-  }
   100% {
-    transform: translateY(-11.25px);
+    transform: translateY(-0.25px);
   }
 }
 
 .cir-5 {
-  animation: circle-animated-5 1.5s alternate-reverse infinite;
-  transform: translateY(17px);
+  animation: circle-animated-5 1s alternate-reverse infinite;
+  transform: translateY(40px);
 }
 @keyframes circle-animated-5 {
-  0% {
-    transform: rotateX(9px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-  90% {
-    transform: translateY(-4.8px);
-  }
   100% {
-    transform: translateY(-9px);
+    transform: translateY(-0.2px);
   }
 }
 

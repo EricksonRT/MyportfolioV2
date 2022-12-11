@@ -1,0 +1,35 @@
+.list-card{
+    // background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: auto;
+    display: grid;
+    gap: 1.4em;
+    grid-row: 1;
+    // cantidad,
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 10px;
+    // text
+    &_card{
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid;
+    }
+    &_description{
+        width: 100%;
+        word-wrap: break-word;
+    }
+    // img
+    &_img{
+        shape-outside: circle(50%);
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+}

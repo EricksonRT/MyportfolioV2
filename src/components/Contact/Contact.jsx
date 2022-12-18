@@ -1,18 +1,37 @@
-import { useState } from "react";
-import sendLogo from "./../../assets/img/icons/send.svg";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+  // Cuerpo del array
   const [dataForm, setDataForm] = useState({});
+  // Seteo de contenido para enviar
   const valueData = (e) =>
     setDataForm({ ...dataForm, [e.target.name]: e.target.value });
+  // Envia el mail con EmailJs
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(dataForm);
+    // console.log(dataForm);
+    emailjs
+      .sendForm(
+        "service_3w5ugkt",
+        "template_xasifnl",
+        form.current,
+        "6nBDDJnTvEBU1E8ek"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div className="container">
       <h1 className="header">Contácta conmigo 💻</h1>
       <div className="form">
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="form_group">
             <label className="form_label" htmlFor="form-name">
               Nombre
@@ -20,10 +39,9 @@ const Contact = () => {
             <input
               className="form_input"
               type="text"
-              name="form-name"
+              name="user_name"
               id="form-name"
               onChange={valueData}
-              required
             />
           </div>
           <div className="form_group">
@@ -33,9 +51,8 @@ const Contact = () => {
             <input
               className="form_input"
               type="email"
-              name="form-email"
+              name="user_email"
               id="form-email"
-              required
               onChange={valueData}
             />
           </div>
@@ -63,13 +80,13 @@ const Contact = () => {
               </label>
               <textarea
                 className="form_textarea"
-                name="form-textarea-message"
+                name="message"
                 id="form-textarea-message"
                 onChange={valueData}
               ></textarea>
             </div>
           </div>
-          <button className="form_btn" onClick={sendEmail} type="submit">
+          <button className="form_btn" type="submit">
             Enviar email
           </button>
         </form>

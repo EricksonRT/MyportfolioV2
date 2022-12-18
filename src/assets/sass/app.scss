@@ -5,6 +5,7 @@
 @use "animations";
 @use "loading";
 @use 'WorkItemList';
+@use "contact";
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 * {
@@ -32,4 +33,16 @@ body {
   &::-webkit-scrollbar-thumb {
     background: rgba(20, 149, 255, 0.549);
   }
+}
+
+.title-center{
+  text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.line-height{
+  line-height:15px;
 }

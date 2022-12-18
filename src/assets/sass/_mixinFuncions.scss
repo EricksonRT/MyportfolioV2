@@ -51,3 +51,9 @@ $colorPrimario: rgba(0, 153, 255, 0.85);
     }
   }
 }
+@mixin animationInputs($ancho){
+        border: 3px solid rgba(8, 0, 255, 0.744);
+        transition: 0.5s;
+        width: $ancho+ em;
+        transform: translateX(20%);
+}

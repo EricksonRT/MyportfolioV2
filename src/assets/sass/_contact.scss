@@ -1,0 +1,138 @@
+@use "mixinFuncions";
+
+.form{
+    display: flex;
+    margin: 1em;
+    // justify-content: center;
+    // align-items: center;
+    // align-self: center;
+    
+    &_group{
+        width: 10rem !important;
+    }
+    &_label{
+        color: white;
+        font-size: 1.2rem;
+    }
+    &_input{
+        margin-top: 5px;
+        width: 13rem;
+        padding: 1em;
+        border-radius: 8px;
+        border: 0px;
+        font-weight: 600;
+    }
+    &_input:focus{
+        @include mixinFuncions.animationInputs(18);
+    }
+    &_select{
+        margin-top: 5px;
+        width: 14.6rem;
+        padding: 1em;
+        border-radius: 8px;
+        border: 0px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    &_select:focus{
+        @include mixinFuncions.animationInputs(21);
+    }
+    &_textarea{
+        width: 14.6rem;
+        right: 0;
+        height: 5rem;
+        border-radius: 8px;
+        border: 0px;
+        font-weight: 600;
+    }
+    &_textarea:focus{
+        @include mixinFuncions.animationInputs(18);
+    }
+    &_btn{
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 0px;
+        padding: 10px;
+        width: 100%;
+        background-color: #fff;
+        font-size: 1rem;    
+        cursor: pointer;
+        transition: all 0.5s;
+        font-weight: 600;
+    }
+    &_btn:hover{
+        background-color: rgb(175, 172, 255);
+        color: #fff;
+    }
+    &_btn:active{
+        background-color: rgb(0, 77, 184);
+        transition: all 0.5s;
+    }
+}
+//500px
+ @media (min-width:500px) {
+    .form_input{
+        width: 20rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(25)
+        }
+    }
+    .form_select{
+        width: 22.6rem;
+        cursor: pointer;
+        &:focus{
+            @include mixinFuncions.animationInputs(25);
+        }
+    }
+    .form_textarea{
+        width: 22.6rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(25);
+        }
+    }
+ }
+//760px
+ @media (min-width:760px) {
+    .form_input{
+        width: 32rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(36)
+        }
+    }
+    .form_select{
+        width: 33.6rem;
+        cursor: pointer;
+        &:focus{
+            @include mixinFuncions.animationInputs(38);
+        }
+    }
+    .form_textarea{
+        width: 33.6rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(36);
+        }
+    }
+ }
+ 
+ //900px
+ @media (min-width:900px) {
+    .form_input{
+        width: 33rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(40)
+        }
+    }
+    .form_select{
+        width: 34.6rem;
+        cursor: pointer;
+        &:focus{
+            @include mixinFuncions.animationInputs(43);
+        }
+    }
+    .form_textarea{
+        width: 34.6rem;
+        &:focus{
+            @include mixinFuncions.animationInputs(40);
+        }
+    }
+ }

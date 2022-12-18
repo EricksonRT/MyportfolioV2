@@ -1,75 +1,93 @@
+import imgDemo from "./../../assets/img/demoIMAGEN.jpg";
 const Info = [
   {
     id: 1,
-    work_title: 'Leontyne',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
-    work_technologies: ['React', 'CSS', 'HTMl'],
-    work_image: 'https://robohash.org/porrohicut.png?size=50x50&set=set1',
+    work_title: "Mi titulo de prueba",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
+    work_technologies: ["React", "CSS", "HTMl"],
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 2,
-    work_title: 'Filberto',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
-    work_technologies: ['React', 'CSS', 'HTMl'],
-    work_image: 'https://robohash.org/illoeligendiqui.png?size=50x50&set=set1',
+    work_title: "Desarrollo impacto alarmas",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
+    work_technologies: ["React", "CSS", "HTMl"],
+    work_image: imgDemo,
   },
   {
     id: 3,
-    work_title: 'Dot',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}],
     work_image:
-      'https://robohash.org/numquamdistinctiocorporis.png?size=50x50&set=set1',
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 4,
-    work_title: 'Simona',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}, {}],
-    work_image: 'https://robohash.org/corporisetveniam.png?size=50x50&set=set1',
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 5,
-    work_title: 'Les',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
-    work_technologies: ['React', 'CSS', 'HTMl'],
-    work_image: 'https://robohash.org/idutet.png?size=50x50&set=set1',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
+    work_technologies: ["React", "CSS", "HTMl"],
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 6,
-    work_title: 'Lexine',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}],
-    work_image: 'https://robohash.org/illumiureid.png?size=50x50&set=set1',
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 7,
-    work_title: 'Cecile',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}, {}, {}],
-    work_image: 'https://robohash.org/ipsamrerumcum.png?size=50x50&set=set1',
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 8,
-    work_title: 'Karla',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}, {}],
-    work_image: 'https://robohash.org/velitimpeditunde.png?size=50x50&set=set1',
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 9,
-    work_title: 'Reider',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}, {}],
     work_image:
-      'https://robohash.org/veritatisipsamquam.png?size=50x50&set=set1',
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 10,
-    work_title: 'Lon',
-    work_description: 'a4f13ad87cc8d49af07a09ed41bac4bd8ebf3992',
+    work_title: "Mi titulo de prueba de la pagina web con varias tecnologias|",
+    work_description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum ad sunt dolorem aliquid placeat ipsam voluptas consequuntur, ipsa ut sed quia, nesciunt fugiat blanditiis exercitationem beatae iste ? Perferendis, voluptas quas.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam quod veniam nobis corrupti accusantium ducimus, a tempore repudiandae saepe quos perspiciatis expedita. Harum provident laboriosam pariatur delectus consequuntur maxime.",
     work_technologies: [{}, {}],
-    work_image: 'https://robohash.org/sitquisvel.png?size=50x50&set=set1',
+    work_image:
+      "https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];
 export const Get_information = () => {

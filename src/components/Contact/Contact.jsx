@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
   // Cuerpo del array
@@ -7,25 +7,36 @@ const Contact = () => {
   // Seteo de contenido para enviar
   const valueData = (e) =>
     setDataForm({ ...dataForm, [e.target.name]: e.target.value });
+  // Valida que no haya campos vacios.
+  const checkInputs = () => {
+    return (
+      dataForm.user_name != '' &&
+      dataForm.emisor != '' &&
+      dataForm.form_select_subject != '' &&
+      dataForm.message != '' &&
+      dataForm.form_select_subject != ''
+    );
+  };
   // Envia el mail con EmailJs
   const sendEmail = (e) => {
     e.preventDefault();
-    // console.log(dataForm);
-    emailjs
-      .sendForm(
-        "service_3w5ugkt",
-        "template_xasifnl",
-        form.current,
-        "6nBDDJnTvEBU1E8ek"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (checkInputs()) {
+      emailjs
+        .sendForm(
+          'service_3w5ugkt',
+          'template_xasifnl',
+          form.current,
+          '6nBDDJnTvEBU1E8ek'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
   return (
     <div className="container">
@@ -49,21 +60,29 @@ const Contact = () => {
               Correo Electrónico
             </label>
             <input
+              style={{ display: 'none' }}
               className="form_input"
               type="email"
               name="user_email"
               id="form-email"
               onChange={valueData}
             />
+            <input
+              className="form_input"
+              type="email"
+              name="emisor"
+              id="emisor"
+              onChange={valueData}
+            />
           </div>
           <div className="form_group">
-            <label className="form_label" htmlFor="form-select-subject">
+            <label className="form_label" htmlFor="form_select_subject">
               Asunto
             </label>
             <select
               className="form_select"
-              name="form-select-subject"
-              id="form-select-subject"
+              name="form_select_subject"
+              id="form_select_subject"
               onChange={valueData}
             >
               <option defaultValue="none" required={true}>
@@ -86,7 +105,11 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <button className="form_btn" type="submit">
+          <button
+            disabled={checkInputs() == false}
+            className="form_btn"
+            type="submit"
+          >
             Enviar email
           </button>
         </form>

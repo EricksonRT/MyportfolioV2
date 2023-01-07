@@ -245,6 +245,17 @@ p {
   background-color: white;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  width: 10em !important;
+  font-size: 2em;
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0), 0 0 0 2px rgb(255, 255, 255), 1px 1px 10px rgba(0, 0, 0, 0.155);
+  transition: all 0.4s;
+}
+
 /* Animation */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -628,12 +639,21 @@ p {
   font-weight: 600;
 }
 .form_btn:hover {
-  background-color: rgb(175, 172, 255);
+  background-color: rgb(142, 138, 249);
   color: #fff;
+  border-bottom: inset rgba(17, 165, 198, 0.653);
 }
 .form_btn:active {
   background-color: rgb(0, 77, 184);
+  border-bottom: inset rgba(17, 198, 17, 0.653);
   transition: all 0.5s;
+}
+.form_btn:disabled {
+  background-color: rgba(17, 43, 128, 0.411);
+  color: #fff;
+  transition: all 0.5s;
+  border-bottom: inset rgba(8, 7, 6, 0.339);
+  cursor: not-allowed;
 }
 
 @media (min-width: 500px) {

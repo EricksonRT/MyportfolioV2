@@ -3,7 +3,12 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
   // Cuerpo del array
-  const [dataForm, setDataForm] = useState({});
+  const [dataForm, setDataForm] = useState({
+    user_name: '',
+    emisor: '',
+    form_select_subject: '',
+    message: '',
+  });
   // Seteo de contenido para enviar
   const valueData = (e) =>
     setDataForm({ ...dataForm, [e.target.name]: e.target.value });
@@ -21,6 +26,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     if (checkInputs()) {
+      console.log(checkInputs());
       emailjs
         .sendForm(
           'service_3w5ugkt',
@@ -53,6 +59,7 @@ const Contact = () => {
               name="user_name"
               id="form-name"
               onChange={valueData}
+              required
             />
           </div>
           <div className="form_group">
@@ -73,6 +80,7 @@ const Contact = () => {
               name="emisor"
               id="emisor"
               onChange={valueData}
+              required
             />
           </div>
           <div className="form_group">
@@ -84,8 +92,9 @@ const Contact = () => {
               name="form_select_subject"
               id="form_select_subject"
               onChange={valueData}
+              required
             >
-              <option defaultValue="none" required={true}>
+              <option defaultValue="none">
                 Selecciona el que se ajuste a su motivo
               </option>
               <option value="Desarrollo Web">Desarrollo de sitio web</option>
@@ -102,6 +111,7 @@ const Contact = () => {
                 name="message"
                 id="form-textarea-message"
                 onChange={valueData}
+                required
               ></textarea>
             </div>
           </div>

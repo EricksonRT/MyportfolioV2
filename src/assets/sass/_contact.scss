@@ -61,12 +61,21 @@
         font-weight: 600;
     }
     &_btn:hover{
-        background-color: rgb(175, 172, 255);
+        background-color: rgb(142, 138, 249);
         color: #fff;
+        border-bottom: inset rgba(17, 165, 198, 0.653)
     }
     &_btn:active{
         background-color: rgb(0, 77, 184);
+        border-bottom: inset rgba(17, 198, 17, 0.653);
         transition: all 0.5s;
+    }
+    &_btn:disabled{
+        background-color: rgba(17, 43, 128, 0.411);
+        color: #fff;
+        transition: all 0.5s;
+        border-bottom: inset rgba(8, 7, 6, 0.339);
+        cursor:not-allowed;
     }
 }
 //500px

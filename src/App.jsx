@@ -8,6 +8,7 @@ import { Nabvar } from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Jobs from "./components/Jobs/Jobs";
 import Contact from "./components/Contact/Contact";
+import AddToFirebase from "./components/AddToFirebase/AddToFirebase";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects/" element={<Projects />} />
           <Route path="/jobs/" element={<Jobs />} />
           <Route path="/contact/" element={<Contact />} />
+          <Route path="/add-to-firebase/" element={<AddToFirebase/>} />
         </Routes>
       </BrowserRouter>
       <Footer />

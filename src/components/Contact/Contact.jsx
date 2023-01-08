@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
-  // Cuerpo del array
+  // Cuerpo del array de objeto
   const [dataForm, setDataForm] = useState({
     user_name: '',
     emisor: '',
